@@ -1,2 +1,8 @@
 # Clustering-DimensionalityReduction
-his project involved exploring various clustering algorithms on the Iris dataset. We started by loading and preprocessing the data using StandardScaler and PCA for dimensionality reduction. Then, we applied and evaluated three different clustering methods: K-Means (on both original and PCA-reduced data), Hierarchical Clustering, and DBSCAN. We visualized the clusters in 2D and 3D, and assessed the performance of each algorithm by comparing their cluster assignments against the true species labels using confusion matrices, as well as analyzing cluster composition and feature means.
+# Clustering Analysis on Iris Dataset
+
+This project explored K-Means, Hierarchical, and DBSCAN clustering on the Iris dataset. K-Means, applied to both original and PCA-reduced data, successfully isolated Iris-setosa (species 0) but struggled to clearly separate Iris-versicolor (species 1) and Iris-virginica (species 2), often grouping them. Hierarchical clustering showed similar limitations, with species 1 and 2 exhibiting significant overlap.
+
+DBSCAN demonstrated unique behavior, successfully separating two species but failing to form a cluster for a third, instead marking points as noise. Petal dimensions were consistently the most influential features. While all algorithms identified distinct groups, none perfectly distinguished all three species without some misclassification or noise, highlighting the inherent challenges in separating Iris-versicolor and Iris-virginica.
+
+
